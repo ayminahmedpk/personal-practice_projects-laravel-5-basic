@@ -10,14 +10,25 @@ class PagesController extends Controller
 
 {
     function index() {
-        return view('pages.index');
+        $titleSuffix = '';
+        return view('pages.index')->with('titleSuffix', $titleSuffix);
     }
     
     function about() {
-        return view('pages.about');
+        $titleSuffix = ' - xAbout';
+        return view('pages.about')->with('titleSuffix', $titleSuffix);
     }
 
     function services() {
-        return view('pages.services');
+        // multiple values
+        $data = array(
+            'titleSuffix' => ' - _Services',
+            'services' => [
+                'Web Design',
+                'Programming',
+                'SEO'
+            ]
+        );
+        return view('pages.services')->with($data);
     }
 }

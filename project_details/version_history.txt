@@ -1,5 +1,18 @@
 
 
+0.0.3:
+  - Navbar (own simplistic navbar, full links)
+  - Flow:
+      Route
+      -> Controller
+      -> View
+  - Blade templates
+    - extending / yield
+    - config()
+    - if control (conditional rendering)
+    - foreach loop (mapping)
+  - Passing values to views
+
 
 0.0.2:
   - Page views (index, about, services)
