@@ -1,0 +1,10 @@
+
+
+To learn Laravel,
+
+including MVC,
+basic CRUD,
+model relationships,
+standard authenticatin + access control,
+file upload
+and basic deployement
