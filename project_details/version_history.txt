@@ -1,6 +1,13 @@
 
 
 
+0.0.2:
+  - Page views (index, about, services)
+  - PagesController (using artisan)
+    -> relevant view in /resources/views/pages/*.blade.php
+  - Routes for /, /index, /services
+    -> relevant method in PagesController
+
 
 0.0.1:
   - Tried compiling css, can't compile due to version and compatibility issues

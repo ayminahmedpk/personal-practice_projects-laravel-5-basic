@@ -1,0 +1,4 @@
+
+
+- config() unable to use app.name , but works for other env variables. Is it
+  because APP_NAME isn't included by default, or in .env.example ? 

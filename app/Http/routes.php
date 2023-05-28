@@ -13,4 +13,14 @@
 
 Route::get('/', function () {
     return view('welcome');
+    // return ('welp');
 });
+
+
+// Route::get('/about', function () {
+//     return view('pages.about');
+// });
+
+Route::get('/', 'PagesController@index');
+Route::get('/about', 'PagesController@about');
+Route::get('/services', 'PagesController@services');
