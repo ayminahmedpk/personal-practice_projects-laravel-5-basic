@@ -1,5 +1,14 @@
 
 
+0.0.5
+  - Making navbar an include as well
+  - Including validation messages
+  - Adding validation to PostsController->store()
+  - Implementing create in PostsController->store()
+  - Form on post.create view for submitting to PostsController@store
+  - Creating post route -> controller -> view
+
+
 0.0.4
   - Set up pagination in posts index
   - Set up sorting in posts index

@@ -9,6 +9,9 @@
 
 @section('content')
     <h1>Posts</h1>
+    <button>
+      <a href="/from_scratch/public/posts/create">New</a>
+    </button>
 
     @if(count($posts) > 0)
 
