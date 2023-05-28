@@ -1,0 +1,11 @@
+
+
+
+
+0.0.1:
+  - Tried compiling css, can't compile due to version and compatibility issues
+  - Tried the changes to the hosts file, couldn't make it work
+
+
+
+init

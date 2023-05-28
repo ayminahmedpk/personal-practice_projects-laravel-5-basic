@@ -1,8 +1,12 @@
 {
   "private": true,
   "scripts": {
+    "preinstall": "npx npm-force-resolutions",
     "prod": "gulp --production",
     "dev": "gulp watch"
+  },
+  "resolutions": {
+    "graceful-fs": "^4.2.11"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
