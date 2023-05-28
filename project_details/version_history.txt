@@ -1,5 +1,27 @@
 
 
+0.0.4
+  - Set up pagination in posts index
+  - Set up sorting in posts index
+  - Set up posts show (read individual post)
+    - Configured the posts.show view
+    - Made PostsController@show fetch the right post based on $id
+      (route with resource already gets $id as dynamic parameter)
+    - Made PostsController@show return the show view, ->with $post
+  - Set up posts index (list all posts)
+    - Configured the posts.index view
+    - Made PostsController@index fetch all posts
+    - Made PostsController@index return the index view, ->with $posts
+  - Configured controller for posts (resource)
+  - Configured routes for posts (resource)
+  - Added sample data to posts table using artisan -> tinker -> eloquent
+  - Ran the created (and pre-included) migrations
+  - Populated the migration
+  - Created Post model and migration with Artisan
+  - Created db in phpmyadmin
+  - Configured connection to mysql
+
+
 0.0.3:
   - Navbar (own simplistic navbar, full links)
   - Flow:
