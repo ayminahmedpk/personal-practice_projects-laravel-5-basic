@@ -1,5 +1,11 @@
 
 
+0.0.7
+  - deletion implemented
+    - delete button as submit for form with method_field('DELETE') and
+      csrf_token()
+
+
 0.0.6
   - editing implemented, with this flow:
     -> edit button (on show view)
