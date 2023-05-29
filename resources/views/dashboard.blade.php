@@ -10,6 +10,17 @@
                 <div class="panel-body">
                     You are logged in!
                 </div>
+
+                @if(count($posts) > 0)
+                    @foreach ($posts as $post)
+                        <h1>{{$post->title}}</h1>
+                        <div>
+                            {!!$post->body!!}
+                        </div>
+                        <br><br>
+                    @endforeach
+                @endif
+
             </div>
         </div>
     </div>

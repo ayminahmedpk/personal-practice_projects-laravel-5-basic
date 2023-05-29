@@ -1,5 +1,13 @@
 
 
+0.0.10
+  - Used relationship between posts/users
+    - to render only logged in user's posts on dashboard
+    - to show post author's name next to post creation date
+  - Established relation between post and user models
+  - Migrated posts table to have user_id field
+
+
 0.0.9
   - Renaming home to dashboard
 
