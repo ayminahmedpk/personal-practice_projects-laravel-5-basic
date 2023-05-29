@@ -10,6 +10,12 @@ use App\Post;
 
 
 class PostsController extends Controller {
+
+    public function __construct()
+    {
+        $this->middleware( 'auth', ['except' => ['index', 'show']] );
+    }
+
     
     /**
      * Display a listing of the resource.
@@ -89,6 +95,13 @@ class PostsController extends Controller {
     public function edit($id)
     {
         $post = Post::find($id);
+
+        // If logged in and directely browsed to link /post/{id}/edit, could
+        // edit another user's post. This if block restricts it.
+        if(auth()->user->id !== $post->user_id) {
+            return redirect('/posts')->with('error', 'Access denied');
+        }
+
         return view('posts.edit')->with('post', $post);
     }
 
@@ -132,6 +145,13 @@ class PostsController extends Controller {
     public function destroy($id)
     {
         $post = Post::find($id);
+
+        // If logged in and directely browsed to link /post/{id}/delete, could
+        // delete another user's post. This if block restricts it.
+        if(auth()->user->id !== $post->user_id) {
+            return redirect('/posts')->with('error', 'Access denied');
+        }
+
         $post->delete();
 
         return redirect('/posts')->with('success', 'Post deleted');

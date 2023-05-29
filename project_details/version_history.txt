@@ -1,5 +1,11 @@
 
 
+0.0.11
+  - Access control implemented. Conditional access and rendering based on:
+    - whether logged in or not
+    - the id of the user that is logged in
+
+
 0.0.10
   - Used relationship between posts/users
     - to render only logged in user's posts on dashboard

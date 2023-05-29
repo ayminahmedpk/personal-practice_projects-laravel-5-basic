@@ -18,15 +18,22 @@
 
   <br><br>
 
-  <button>
-    <a href="/from_scratch/public/posts/{{$post->id}}/edit">Edit</a>
-  </button>
+  @if(!Auth::guest())
+    @if (Auth::user()->id == $post->user_id)
+        
+      <button>
+        <a href="/from_scratch/public/posts/{{$post->id}}/edit">Edit</a>
+      </button>
 
-  <form action="{{ action('PostsController@destroy', [$post->id] ) }}" method="post">
-    <input type="submit" value="Delete">
-    {{csrf_field()}}
-    {{method_field('DELETE')}}
-  </form>
+      <form action="{{ action('PostsController@destroy', [$post->id] ) }}" method="post">
+        <input type="submit" value="Delete">
+        {{csrf_field()}}
+        {{method_field('DELETE')}}
+      </form>
+
+    @endif
+  @endif
+
 
   </form>
 
