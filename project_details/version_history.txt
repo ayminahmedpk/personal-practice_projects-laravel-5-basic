@@ -1,5 +1,9 @@
 
 
+0.0.8
+  - Authentication implemented (before renaming home to dashboard)
+
+
 0.0.7
   - deletion implemented
     - delete button as submit for form with method_field('DELETE') and
