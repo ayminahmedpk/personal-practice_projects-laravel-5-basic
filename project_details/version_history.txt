@@ -1,5 +1,9 @@
 
 
+0.0.9
+  - Renaming home to dashboard
+
+
 0.0.8
   - Authentication implemented (before renaming home to dashboard)
 

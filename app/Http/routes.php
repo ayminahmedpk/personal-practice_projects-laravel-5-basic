@@ -28,4 +28,4 @@ Route::get('/services', 'PagesController@services');
 Route::resource('posts', 'PostsController');
 Route::auth();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/dashboard', 'DashboardController@index');
