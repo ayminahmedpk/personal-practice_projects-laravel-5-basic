@@ -16,4 +16,10 @@
     {!!$post->body!!}
   </div>
 
+  <br><br>
+
+  <button>
+    <a href="/from_scratch/public/posts/{{$post->id}}/edit">Edit</a>
+  </button>
+
 @endsection

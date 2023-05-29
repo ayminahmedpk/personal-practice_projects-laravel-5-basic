@@ -1,4 +1,11 @@
 
 
 - config() unable to use app.name , but works for other env variables. Is it
-  because APP_NAME isn't included by default, or in .env.example ? 
+  because APP_NAME isn't included by default, or in .env.example ?
+
+x PostsController@update : how to browse to dynamic route WITH cached data,
+  
+  answer:
+    $data = array('post' => $post, 'success' => 'Post edited');
+    return redirect()->route('posts.show', ['id' => $id])->with($data);
+
