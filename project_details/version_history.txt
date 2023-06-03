@@ -1,4 +1,7 @@
 
+0.0.12
+  - File upload code copied & steps repeated from wip version. Tested, works.
+
 
 0.0.11
   - Access control implemented. Conditional access and rendering based on:

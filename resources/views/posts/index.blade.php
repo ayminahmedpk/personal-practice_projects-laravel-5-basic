@@ -14,12 +14,20 @@
       <button>
         <a href="/from_scratch/public/posts/create">New</a>
       </button>
+      <br><br>
     @endif
 
 
     @if(count($posts) > 0)
 
       @foreach ($posts as $post)
+        <div>
+          <img
+            src="/from_scratch/public/images/{{$post->cover_image}}"
+            alt=""
+            style="height:100px; width:100px; display:block;"
+          >
+        </div>
         <h3>
           <a href="/from_scratch/public/posts/{{$post->id}}">{{$post->title}}</a>
         </h3>

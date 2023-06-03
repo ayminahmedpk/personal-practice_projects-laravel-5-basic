@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    {{-- <title>Laravel</title> --}}
+    {{-- <title>{{env('APP_NAME', 'fallback')}}</title> --}}
+    <title>{{env('APP_NAME', 'fallback')}}</title>
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
@@ -54,6 +56,7 @@
                     <li><a href="/from_scratch/public/about">About</a></li>
                     <li><a href="/from_scratch/public/services">Services</a></li>
                     <li><a href="/from_scratch/public/posts">Blog</a></li>
+                    <li><a href="/from_scratch/public/uploadTest">Upload Test</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
